@@ -1,0 +1,22 @@
+{
+    "name": "Node-RED Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+  
+    // Forward ports so you can access Node-RED from the browser
+    "forwardPorts": [1880],
+  
+    // Specify Dockerfile for custom environment
+    "dockerFile": "Dockerfile",
+  
+    // Features to add
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+  
+    "extensions": [
+      "dbaeumer.vscode-eslint"
+    ],
+  
+    "postCreateCommand": "npm install && npm start"
+  }
+  
